@@ -4,13 +4,24 @@
   "description": "Gilded Rose refactoring kata - Bordeaux Ynov M1 TP",
   "main": "index.js",
   "scripts": {
+    "dev": "cross-env DEBUG=true nodemon --exec babel-node src/fixtures.js",
+    "build": "babel src --out-dir dist",
     "test": "jest",
     "test:watch": "jest --watch",
-    "test:coverage": "jest --coverage"
+    "test:coverage": "jest --coverage",
+    "fixtures": "node ./test/fixtures.js"
   },
   "author": "Alison Vandromme",
   "license": "MIT",
   "devDependencies": {
-    "jest": "^27.4.5"
+    "@babel/cli": "^7.16.0",
+    "@babel/core": "^7.16.5",
+    "@babel/node": "^7.16.5",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-env": "^7.16.5",
+    "babel-plugin-root-import": "^6.6.0",
+    "cross-env": "^7.0.3",
+    "jest": "^27.4.5",
+    "nodemon": "^2.0.15"
   }
 }
