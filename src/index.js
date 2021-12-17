@@ -40,9 +40,13 @@ class Shop {
     return item.name === 'Sulfuras, Hand of Ragnaros';
   }
 
+  isConjured(item) {
+    return item.name.toLowerCase().includes('conjured');
+  }
+
   updateStockValues(item) {
     item.sellIn += this.getSellIn(item);
-    item.quality += this.getQuality(item) * 1;
+    item.quality += this.getQuality(item) * (this.isConjured(item) ? 2 : 1);
 
     if (this.isLocked(item) === false) {
       if (item.quality < 0) item.quality = 0;

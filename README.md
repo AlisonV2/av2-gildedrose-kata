@@ -1,4 +1,5 @@
----
+![check-code-coverage](https://img.shields.io/badge/code--coverage-100%25-brightgreen)
+--- 
 Author: Alison Vandromme 
 Date: December 2021
 ---
@@ -69,6 +70,7 @@ This way, we are always able to verify that the existing behavior is not altered
 
 Generated code coverage for the original code.
 The goal is to make sure all the statements and functions are covered. 
+A badge is generated using [check-code-coverage](https://github.com/bahmutov/check-code-coverage#update-badge)
 
 ## Step 4: Refactor
 
@@ -77,16 +79,15 @@ I started from the tests, and made them pass one by one.
 
 ## Step 5: Generate code coverage
 
-I regenerated code coverage to make sure the tests still cover the majority of the code.
-
-<img src="./coverage1.jpg" />
+I regenerated code coverage to make sure the tests still cover the whole code.
 
 ## Step 5: Add the required feature
 
 ### Requirement: "Conjured items degrade in Quality twice as fast as normal items".
 
 First, I wrote the test for the Conjured items requirement.
-Then, I added a new method to make this test pass. 
+Then, I added a new method to make this test pass.
+I reran tests and checked that code coverage is still 100%. 
 
 ## Comments
 
