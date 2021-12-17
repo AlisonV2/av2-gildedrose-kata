@@ -68,6 +68,15 @@ describe('Returns the expected results', () => {
 
     expect(items).toStrictEqual(expectedResult);
   });
+
+  it('Conjured items degrade in Quality twice as fast as normal items', () => {
+    const storeItems = [new Item('Conjured Mana Cake', 10, 20)];
+    const expectedResult = [new Item('Conjured Mana Cake', 9, 18)];
+    const gildedRose = new Shop(storeItems);
+    const items = gildedRose.updateQuality();
+
+    expect(items).toStrictEqual(expectedResult);
+  });
 });
 
 describe('Backstage passes', () => {

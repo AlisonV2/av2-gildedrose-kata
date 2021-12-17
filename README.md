@@ -83,7 +83,10 @@ I regenerated code coverage to make sure the tests still cover the majority of t
 
 ## Step 5: Add the required feature
 
-Requirement: "Conjured items degrade in Quality twice as fast as normal items".
+### Requirement: "Conjured items degrade in Quality twice as fast as normal items".
+
+First, I wrote the test for the Conjured items requirement.
+Then, I added a new method to make this test pass. 
 
 ## Comments
 
