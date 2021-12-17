@@ -1,4 +1,4 @@
-import { Shop, Item } from '../src/originalCode';
+import { Shop, Item } from '../src/index';
 
 describe('Returns the expected results', () => {
   it('Should return the expected results', () => {

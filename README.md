@@ -67,8 +67,13 @@ This way, we are always able to verify that the existing behavior is not altered
 
 ## Step 3: Generate code coverage
 
+Generated code coverage for the original code.
+The goal is to make sure all the statements and functions are covered. 
 
 ## Step 4: Refactor
+
+Instead of modifying the existing code, I entirely rewrote the code. 
+I started from the tests, and made them pass one by one. 
 
 ## Step 5: Add the required feature
 
