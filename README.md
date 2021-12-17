@@ -20,7 +20,7 @@ for you).
 Just for clarification, an item can never have its Quality increase above 50, however "Sulfuras" is a
 legendary item and as such its Quality is 80 and it never alters."
 
-# Steps
+# Refactoring : Steps
 
 ## Step 1: Setup
 
@@ -65,11 +65,17 @@ The goal is to capture the existing output of the code and use it to check again
 The first test compares the original items passed down to the original code agaisnt the results we expect the code to give. 
 This way, we are always able to verify that the existing behavior is not altered.
 
-## Step 3: Refactor the code
+## Step 3: Generate code coverage
 
 
+## Step 4: Refactor
 
-## Step 4: Add the required feature
+## Step 5: Add the required feature
 
 Requirement: "Conjured items degrade in Quality twice as fast as normal items".
+
+## Comments
+
+All the methods are related to the Item class and not the Shop one. 
+Thus, if I had the freedom to modify the Item class, I would have put most of the methods there. 
 

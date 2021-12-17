@@ -23,5 +23,17 @@
     "cross-env": "^7.0.3",
     "jest": "^27.4.5",
     "nodemon": "^2.0.15"
+  },
+  "jest": {
+    "collectCoverage": true,
+    "coverageReporters": [
+      "json",
+      "html"
+    ],
+    "coverageDirectory": "coverage",
+    "collectCoverageFrom": [
+      "src/**/*.js",
+      "!src/fixtures.js"
+    ]
   }
 }

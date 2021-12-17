@@ -43,8 +43,8 @@ describe('Returns the expected results', () => {
   });
 
   it('Aged Brie increases in Quality the older it gets', () => {
-    const storeItems = [new Item('Aged Brie', 1, 0)];
-    const expectedResult = [new Item('Aged Brie', 0, 1)];
+    const storeItems = [new Item('Aged Brie', -1, 49)];
+    const expectedResult = [new Item('Aged Brie', -2, 50)];
     const gildedRose = new Shop(storeItems);
     const items = gildedRose.updateQuality();
 
