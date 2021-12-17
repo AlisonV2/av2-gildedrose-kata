@@ -9,7 +9,8 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
-    "fixtures": "node ./test/fixtures.js"
+    "fixtures": "node ./test/fixtures.js",
+    "badge": "npx update-badge"
   },
   "author": "Alison Vandromme",
   "license": "MIT",
@@ -20,8 +21,22 @@
     "@babel/polyfill": "^7.12.1",
     "@babel/preset-env": "^7.16.5",
     "babel-plugin-root-import": "^6.6.0",
+    "check-code-coverage": "^1.10.0",
     "cross-env": "^7.0.3",
     "jest": "^27.4.5",
     "nodemon": "^2.0.15"
+  },
+  "jest": {
+    "collectCoverage": true,
+    "coverageReporters": [
+      "json",
+      "html",
+      "json-summary"
+    ],
+    "coverageDirectory": "coverage",
+    "collectCoverageFrom": [
+      "src/**/*.js",
+      "!src/originalCode.js"
+    ]
   }
 }
