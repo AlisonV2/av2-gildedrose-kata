@@ -75,6 +75,12 @@ The goal is to make sure all the statements and functions are covered.
 Instead of modifying the existing code, I entirely rewrote the code. 
 I started from the tests, and made them pass one by one. 
 
+## Step 5: Generate code coverage
+
+I regenerated code coverage to make sure the tests still cover the majority of the code.
+
+<img src="./coverage1.jpg" />
+
 ## Step 5: Add the required feature
 
 Requirement: "Conjured items degrade in Quality twice as fast as normal items".
