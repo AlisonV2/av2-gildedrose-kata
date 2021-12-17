@@ -65,5 +65,11 @@ The goal is to capture the existing output of the code and use it to check again
 The first test compares the original items passed down to the original code agaisnt the results we expect the code to give. 
 This way, we are always able to verify that the existing behavior is not altered.
 
+## Step 3: Refactor the code
 
+
+
+## Step 4: Add the required feature
+
+Requirement: "Conjured items degrade in Quality twice as fast as normal items".
 
