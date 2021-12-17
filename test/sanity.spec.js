@@ -1,4 +1,4 @@
-// import { Shop, Item } from '../src/originalCode';
+// import { Shop, Item } from './../src/originalCode';
 
 describe("Sanity test", function() {
   it("should be true", function() {
