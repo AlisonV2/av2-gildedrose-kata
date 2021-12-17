@@ -1,10 +1,6 @@
 ![check-code-coverage](https://img.shields.io/badge/code--coverage-100%25-brightgreen)
---- 
-Author: Alison Vandromme 
-Date: December 2021
----
 
-# Gilded Rose Refactoring Kata
+# Gilded Rose Refactoring Kata - Alison Vandromme
 
 Bordeaux Ynov M1 - Architecture Logicielle
 
